@@ -1,9 +1,16 @@
 # ----------------------------------------------------------------------- User
+# openFrameworks
+**/bin/*
+!**/bin/data/
+
 # CMake dir
 **/build/*
 
 # Qt Creator (Project Generator)
 *.qbs
+
+# Clion
+**/.idea/*
 # ----------------------------------------------------------------------- C++
 # Created by https://www.gitignore.io/api/c++
 
