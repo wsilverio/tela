@@ -31,7 +31,7 @@ int main(int argc, char **argv){
 
     settings.setPosition(ofVec2f(settings.width + 10, 0));
     settings.width = 225;
-    settings.height = 340;
+    settings.height = 350;
     settings.resizable = false;
     shared_ptr<ofAppBaseWindow> guiWindow = ofCreateWindow(settings);
 

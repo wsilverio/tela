@@ -17,6 +17,7 @@ public:
     ofParameter<ofColor> color2;
     ofParameter<bool> lerp;
     ofParameter<std::string> position;
+    ofParameter<std::string> fps;
 
     ofxPanel gui;
 };

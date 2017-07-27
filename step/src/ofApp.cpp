@@ -7,6 +7,7 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+
     gui->speed += gui->acc;
 
     objPos.x += gui->speed;
@@ -31,6 +32,7 @@ void ofApp::update(){
     lerpC = gui->color1->getLerped(gui->color2, lerp);
 
     gui->position = ofToString(objPos.x);
+    gui->fps = ofToString(ofGetFrameRate());
 }
 
 //--------------------------------------------------------------
@@ -43,7 +45,14 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    switch(key){
+        case 'f':
+        case 'F':
+            // ofToggleFullscreen();
+            break;
+        default:
+            break;
+    }
 }
 
 //--------------------------------------------------------------

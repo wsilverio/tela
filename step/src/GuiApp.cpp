@@ -9,6 +9,7 @@ void GuiApp::setup(){
     parameters.add(color2.set("color 2", ofColor(200, 50, 150), ofColor(0, 0), 255));
     parameters.add(lerp.set("lerp color", false));
     parameters.add(position.set("position", ofToString(0)));
+    parameters.add(fps.set("fps", ofToString(0)));
     gui.setup(parameters);
 
     ofSetVerticalSync(false);
